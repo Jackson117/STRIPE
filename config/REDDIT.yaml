@@ -1,0 +1,35 @@
+## global
+model_seed: 1
+cudaID: 0
+mode: train
+batch_size: 3
+num_workers: 1
+num_nodes: 8291
+lr: 0.001
+weight_decay: 0.0005
+num_neigh: 4
+anomaly_rate: 0.05
+
+## data
+data_dir: ./datasets
+dataset: reddit
+snap_size: 1000  # 12445
+
+##parameter
+alpha: 0.9  # 0.9
+beta: 0.5
+gamma: 0.9
+
+epochs: 50
+eval_epoch: 1
+eval_rounds: 20
+Kt: 2
+
+input_dim: 20
+hid_dim: 256
+dropout: 0.3
+temp_update: 0.1
+temp_gather: 0.1
+
+proto_size: 10
+proto_dim: 256
